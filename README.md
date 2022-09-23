@@ -33,3 +33,7 @@
 1111111111111111
 --></led-matrix>
 ```
+
+## Dependencies
+
+- [Color](https://github.com/code4fukui/Color/)
