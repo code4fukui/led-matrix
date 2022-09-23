@@ -1,5 +1,9 @@
 # led-matrix
- 
+
+- [demo](https://code4fukui.github.io/led-matrix/)
+
+## Usage
+
 ```html
 <script type="module" src="https://code4fukui.github.io/led-matrix/led-matrix.js"></script>
 
