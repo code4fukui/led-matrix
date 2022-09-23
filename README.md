@@ -1,6 +1,7 @@
 # led-matrix
 
-- [demo](https://code4fukui.github.io/led-matrix/)
+- [demo on HTML](https://code4fukui.github.io/led-matrix/)
+- [demo on script](https://code4fukui.github.io/led-matrix/script.html)
 
 ## Usage
 
@@ -32,6 +33,13 @@
 1111111111111111
 1111111111111111
 --></led-matrix>
+```
+
+```JavaScript
+import { LEDMatrix } from "https://code4fukui.github.io/led-matrix/led-matrix.js";
+
+const ledmat = new LEDMatrix("0110\n1111\n1111\n0110", { colors: "#600,#d00" });
+document.body.appendChild(ledmat);
 ```
 
 ## Dependencies

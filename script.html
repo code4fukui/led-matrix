@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>LEDMatrix element demo</title>
+</head><body>
+<h1>LEDMatrix element demo</h1>
+
+<div id=c></div>
+
+<script type="module">
+import { LEDMatrix } from "https://code4fukui.github.io/led-matrix/led-matrix.js";
+
+const ledmat = new LEDMatrix("0110\n1111\n1111\n0110", { colors: "#600,#d00" });
+c.appendChild(ledmat);
+</script>
+
+<hr>
+<a href=https://github.com/code4fukui/led-matrix/>src on GitHub</a>

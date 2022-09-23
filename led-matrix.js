@@ -1,5 +1,20 @@
 import { Color } from "https://code4fukui.github.io/Color/Color.js";
 
+const COLORS_DEFAULT = "#222,#d00,#0d0,#00d";
+
+export class LEDMatrix extends HTMLElement {
+  constructor(content, atts) {
+    super();
+    for (const name in atts) {
+      this.setAttribute(name, atts[name]);
+    }
+    const s = getContent(this) || content;
+    const p = createPattern(s, (this.getAttribute("colors") || COLORS_DEFAULT).split(","));
+    this.innerHTML = "";
+    this.appendChild(p);
+  }
+};
+
 const createSVG = (tag) => document.createElementNS("http://www.w3.org/2000/svg", tag);
   
 const circle = (x, y, color, color2) => {
@@ -50,18 +65,6 @@ const getContent = (comp) => {
     }
   }
   return s;
-};
-
-const COLORS_DEFAULT = "#222,#d00,#0d0,#00d";
-
-class LEDMatrix extends HTMLElement {
-  constructor() {
-    super();
-    const s = getContent(this);
-    const p = createPattern(s, (this.getAttribute("colors") || COLORS_DEFAULT).split(","));
-    this.innerHTML = "";
-    this.appendChild(p);
-  }
 };
 
 customElements.define("led-matrix", LEDMatrix);
