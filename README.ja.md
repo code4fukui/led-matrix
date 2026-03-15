@@ -1,7 +1,6 @@
 # led-matrix
 
-1〜2文で説明。
-LEDマトリックスを表示するためのWebコンポーネントです。HTMLタグ`<led-matrix>`から簡単に使えます。
+LED マトリックスを表示するためのWebコンポーネントです。HTMLタグ`<led-matrix>`から簡単に使えます。
 
 ## デモ
 - [HTMLデモ](https://code4fukui.github.io/led-matrix/)
@@ -11,9 +10,6 @@ LEDマトリックスを表示するためのWebコンポーネントです。HT
 - LEDマトリックスをHTMLタグや JavaScript から簡単に表示できる
 - 色を設定可能
 - SVGで描画されるため高解像度に対応
-
-## 必要環境
-特になし。
 
 ## 使い方
 HTMLで使う場合:

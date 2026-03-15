@@ -1,5 +1,7 @@
 # led-matrix
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A lightweight HTML custom element for displaying LED matrix patterns.
 
 ## Demo
