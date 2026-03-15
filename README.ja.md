@@ -1,18 +1,22 @@
 # led-matrix
 
-A lightweight HTML custom element for displaying LED matrix patterns.
+1〜2文で説明。
+LEDマトリックスを表示するためのWebコンポーネントです。HTMLタグ`<led-matrix>`から簡単に使えます。
 
-## Demo
-- [demo on HTML](https://code4fukui.github.io/led-matrix/)
-- [demo on script](https://code4fukui.github.io/led-matrix/script.html)
+## デモ
+- [HTMLデモ](https://code4fukui.github.io/led-matrix/)
+- [スクリプトデモ](https://code4fukui.github.io/led-matrix/script.html)
 
-## Features
-- Easily display LED matrix patterns using HTML
-- Supports custom colors
-- Responsive design
+## 機能
+- LEDマトリックスをHTMLタグや JavaScript から簡単に表示できる
+- 色を設定可能
+- SVGで描画されるため高解像度に対応
 
-## Usage
+## 必要環境
+特になし。
 
+## 使い方
+HTMLで使う場合:
 ```html
 <script type="module" src="https://code4fukui.github.io/led-matrix/led-matrix.js"></script>
 
@@ -43,6 +47,7 @@ A lightweight HTML custom element for displaying LED matrix patterns.
 --></led-matrix>
 ```
 
+JavaScript で使う場合:
 ```JavaScript
 import { LEDMatrix } from "https://code4fukui.github.io/led-matrix/led-matrix.js";
 
@@ -50,8 +55,8 @@ const ledmat = new LEDMatrix("0110\n1111\n1111\n0110", { colors: "#600,#d00" });
 document.body.appendChild(ledmat);
 ```
 
-## Dependencies
+## 依存ライブラリ
 - [Color](https://github.com/code4fukui/Color/)
 
-## License
-MIT
+## ライセンス
+MIT License
