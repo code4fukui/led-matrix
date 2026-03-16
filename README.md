@@ -56,4 +56,4 @@ document.body.appendChild(ledmat);
 - [Color](https://github.com/code4fukui/Color/)
 
 ## License
-MIT
+MIT License — see [LICENSE](LICENSE).
